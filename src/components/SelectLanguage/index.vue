@@ -1,14 +1,28 @@
 <template>
-  <select>
-    <option value="en">EN</option>
-    <option value="fa">FA</option>
+  <select
+    name="languages"
+    id="lang-select"
+    @change="handleChange"
+    v-model="selected"
+  >
+    <option v-for="(option, index) in options" :key="index" :value="option">{{
+      option
+    }}</option>
   </select>
 </template>
 
 <script>
 export default {
   mounted() {
-    this.selected = this.$store.getters.language;
+    const lang = this.$store.getters.language;
+    console.log(lang);
+    for (let i = 0; i < this.options.length; i++) {
+      if (this.options[i] === lang) {
+        this.selected = this.options[i];
+        console.log(`selected: ${this.selected}`);
+        return;
+      }
+    }
   },
   computed: {
     language() {
@@ -16,11 +30,12 @@ export default {
     }
   },
   methods: {
-    handleSetLanguage(lang) {
-      this.$store.dispatch("setLanguage", lang.title);
+    handleChange(event) {
+      const lang = event.target.value;
+      this.$store.dispatch("setLanguage", lang);
       // reload with new language in url
       let routeParams = this.$route.params;
-      routeParams.lang = lang.title;
+      routeParams.lang = lang;
       this.$router.push({
         name: this.$route.name,
         params: routeParams
@@ -31,7 +46,7 @@ export default {
   data() {
     return {
       selected: "en",
-      options: []
+      options: ["en", "fa"]
     };
   }
 };
