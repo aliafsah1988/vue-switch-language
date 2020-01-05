@@ -1,7 +1,12 @@
 {
   "name": "vue-switch-language",
+  "author": "Ali Afsahnoudeh <ali.afsah1988@gmail.com>",
   "version": "1.0.0",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aliafsah1988/vue-switch-language.git"
+  },
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
