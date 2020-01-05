@@ -3,10 +3,20 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <SelectLanguage />
     </div>
     <router-view />
   </div>
 </template>
+
+<script>
+import SelectLanguage from "./components/SelectLanguage/index.vue";
+export default {
+  components: {
+    SelectLanguage
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
