@@ -9,11 +9,14 @@ A vue simple application for multilingual website.
 - Ability to change language of contents (with vue-i18n)
 - Couple of ready to use drop down components for selecting language
 
-## For running the application
+## Demo
+https://aliafsah1988.github.io/vue-multilingual/
+
+### For running the application
 - npm install
 - npm run serve
 
-### Dependencies
+#### Dependencies
 - vue.js            https://github.com/vuejs/vue
 - vue-router        https://github.com/vuejs/vue-router
 - vuex              https://github.com/vuejs/vuex
