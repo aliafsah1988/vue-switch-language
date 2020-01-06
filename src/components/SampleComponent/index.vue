@@ -1,6 +1,8 @@
 <template>
   <div class="sample">
-    <h1>Some text that is floated !</h1>
+    <h1 :class="{ rtl: isRightToLeft, ltr: !isRightToLeft }">
+      {{ $t("title") }}
+    </h1>
   </div>
 </template>
 
@@ -9,6 +11,11 @@ export default {
   name: "SampleComponent",
   props: {
     msg: String
+  },
+  data() {
+    return {
+      isRightToLeft: this.$store.getters.isRightToLeft
+    };
   }
 };
 </script>
