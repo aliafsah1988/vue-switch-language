@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <SelectLanguage />
-    </div>
+    <Header />
     <router-view />
   </div>
 </template>
 
 <script>
-import SelectLanguage from "./components/SelectLanguage/index.vue";
+import Header from "./components/Header/index.vue";
+
 export default {
   components: {
-    SelectLanguage
+    Header
   }
 };
 </script>
@@ -23,18 +22,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>

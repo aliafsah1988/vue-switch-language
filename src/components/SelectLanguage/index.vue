@@ -15,11 +15,9 @@
 export default {
   mounted() {
     const lang = this.$store.getters.language;
-    console.log(lang);
     for (let i = 0; i < this.options.length; i++) {
       if (this.options[i] === lang) {
         this.selected = this.options[i];
-        console.log(`selected: ${this.selected}`);
         return;
       }
     }
