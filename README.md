@@ -1,14 +1,17 @@
 # vue-switch-language
-A vue sample application for changing and switching between languages with changing direction between right to left and left to right.
+A vue simple application for multilingual website.
+- SEO best practices in routing
+- Ablility to easily switch beween rtl and ltr
+- Ablility to change language of contents
 
-## Project setup
-npm install
+## For running the application
+- npm install
+- npm run serve
 
-### Compiles and hot-reloads for development
-npm run serve
-
-### Compiles and minifies for production
-npm run build
-
-### Run your unit tests
-npm run test:unit
+### Dependencies
+- vue.js
+- vue-router
+- vuex
+- vue-multiselect
+- vue-i18n
+- vue-country-flag
