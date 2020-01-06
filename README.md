@@ -1,4 +1,6 @@
 # vue-multilingual
+![alt text](https://raw.githubusercontent.com/aliafash1988/vue-multilingual/master/src/assets/screencapture-en.png)
+
 A vue simple application for multilingual website.
 - SEO best practices in routing:
     By using locale-specific URLs, so different languages will be appearing in different subdirectories. 

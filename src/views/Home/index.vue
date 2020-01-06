@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import SampleComponent from "@/components/SimpleSelectLanguage";
+import SampleComponent from "@/components/SampleComponent";
 
 export default {
   name: "home",
