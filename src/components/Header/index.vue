@@ -1,7 +1,9 @@
 <template>
   <div class="header">
-    <SimpleSelectLanguage />
-    <VueSelectLanguage />
+    <div class="main">
+      <SimpleSelectLanguage />
+      <VueSelectLanguage />
+    </div>
   </div>
 </template>
 

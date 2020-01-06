@@ -1,3 +1,4 @@
 export default {
-  title: "A simple app for multi lang website!"
+  title: "A simple app for multilingual website!",
+  text: "Simple text"
 };

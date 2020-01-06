@@ -3,6 +3,9 @@
     <h1 :class="{ rtl: isRightToLeft, ltr: !isRightToLeft }">
       {{ $t("title") }}
     </h1>
+    <div :class="{ rtl: isRightToLeft, ltr: !isRightToLeft }">
+      {{ $t("text") }}
+    </div>
   </div>
 </template>
 

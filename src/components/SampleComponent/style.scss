@@ -2,11 +2,19 @@
     padding: 50px;
 }
 
+h1 {
+    width: 100%;
+}
+
 .rtl {
     float: right;
     direction: rtl;
+    width: 100%;
+    text-align: right;
 }
 
 .ltr {
     float: left;
+    width: 100%;
+    text-align: left;
 }
