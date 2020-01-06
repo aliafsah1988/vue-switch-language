@@ -1,9 +1,9 @@
 # vue-multilingual
 A vue simple application for multilingual website.
 - SEO best practices in routing:
-    By using locale-specific URLs, so differenct languages will be appear in differenct subdirectories. 
-- Ablility to easily switch beween rtl and ltr
-- Ablility to change language of contents (with vue-i18n)
+    By using locale-specific URLs, so different languages will be appearing in different subdirectories. 
+- Ability to easily switch between rtl and ltr
+- Ability to change language of contents (with vue-i18n)
 - Couple of ready to use drop down components for selecting language
 
 ## For running the application
