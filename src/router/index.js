@@ -15,15 +15,11 @@ export default new Router({
       path: "/:lang",
       component: Root,
       props: true,
-      beforeEnter(from, to, next) {
-        next();
-      },
       children: [
         {
           path: "",
           name: "home",
-          component: () =>
-            import(/* webpackChunkName: "Home" */ "@/views/Home/index.vue"),
+          component: () => import("@/views/Home/index.vue"),
           props: true
         }
       ]

@@ -1,13 +1,12 @@
 <template>
   <div class="home">
-    <img class="main-image" src="../../assets/background.png" />
+    <img class="main-image" src="@/assets/background.png" />
     <SampleComponent />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import SampleComponent from "@/components/SampleComponent";
+import SampleComponent from "@/components/SimpleSelectLanguage";
 
 export default {
   name: "home",

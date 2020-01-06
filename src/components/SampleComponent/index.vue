@@ -9,9 +9,6 @@
 <script>
 export default {
   name: "SampleComponent",
-  props: {
-    msg: String
-  },
   data() {
     return {
       isRightToLeft: this.$store.getters.isRightToLeft
@@ -21,5 +18,5 @@ export default {
 </script>
 
 <style>
-@import url("./style.css");
+@import url("./style.scss");
 </style>

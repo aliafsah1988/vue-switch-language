@@ -80,5 +80,5 @@ export default {
 
 <style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
 <style>
-@import url("./style.css");
+@import url("./style.scss");
 </style>

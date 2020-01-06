@@ -1,23 +1,23 @@
 <template>
   <div class="header">
-    <SelectLanguage />
+    <SimpleSelectLanguage />
     <VueSelectLanguage />
   </div>
 </template>
 
 <script>
-import SelectLanguage from "@/components/SelectLanguage/index.vue";
+import SimpleSelectLanguage from "@/components/SimpleSelectLanguage";
 import VueSelectLanguage from "@/components/VueSelectLanguage";
 
 export default {
   name: "Header",
   components: {
-    SelectLanguage,
+    SimpleSelectLanguage,
     VueSelectLanguage
   }
 };
 </script>
 
 <style>
-@import url("./style.css");
+@import url("./style.scss");
 </style>

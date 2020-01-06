@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: "SimpleSelectLanguage",
   mounted() {
     const lang = this.$store.getters.language;
     for (let i = 0; i < this.options.length; i++) {
@@ -51,5 +52,5 @@ export default {
 </script>
 
 <style>
-@import url("./style.css");
+@import url("./style.scss");
 </style>
