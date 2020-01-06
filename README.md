@@ -1,5 +1,5 @@
 # vue-multilingual
-![alt text](https://raw.githubusercontent.com/aliafash1988/vue-multilingual/master/src/assets/screencapture-en.png)
+![alt text](https://raw.githubusercontent.com/aliafsah1988/vue-multilingual/master/src/assets/screencapture-en.png)
 
 A vue simple application for multilingual website.
 - SEO best practices in routing:
