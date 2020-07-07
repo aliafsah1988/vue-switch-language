@@ -17,5 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url("./style.scss");
+.main-image {
+  width: 600px;
+}
 </style>

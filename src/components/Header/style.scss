@@ -1,9 +1,6 @@
 .header {
-    display: grid;
-}
-.header .main {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    float: none;
-    justify-self: center; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 10%;
 }
