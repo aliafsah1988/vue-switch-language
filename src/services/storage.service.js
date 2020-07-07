@@ -5,8 +5,8 @@ const LanguageService = {
     return localStorage.getItem(LANGUAGE_KEY);
   },
 
-  saveLanguage(accessToken) {
-    localStorage.setItem(LANGUAGE_KEY, accessToken);
+  saveLanguage(language) {
+    localStorage.setItem(LANGUAGE_KEY, language);
   },
 
   removeLanguage() {

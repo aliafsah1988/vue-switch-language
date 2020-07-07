@@ -1,7 +1,11 @@
 <template>
   <div class="header">
     <SimpleSelectLanguage />
-    <VueSelectLanguage :initLang="language" @changed="onChanged" />
+    <VueSelectLanguage
+      :initLang="initLang"
+      :options="options"
+      @changed="onChanged"
+    />
   </div>
 </template>
 
@@ -16,12 +20,26 @@ export default {
     SimpleSelectLanguage,
     VueSelectLanguage
   },
+  data() {
+    return {
+      initLang: this.$store.getters.language,
+      options: [
+        {
+          title: "en",
+          flag: "gb"
+        },
+        {
+          title: "fa",
+          flag: "ir"
+        }
+      ]
+    };
+  },
   methods: {
-    onChanged(lang) {
-      this.$store.dispatch("setLanguage", lang);
-      // reload with new language in url
+    onChanged(langObject) {
+      this.$store.dispatch("setLanguage", JSON.stringify(langObject));
       let newParams = this.$route.params;
-      newParams.lang = lang;
+      newParams.lang = langObject.title;
       this.$router.push({
         name: this.$route.name,
         params: newParams

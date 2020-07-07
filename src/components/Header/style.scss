@@ -4,3 +4,12 @@
     flex-direction: column;
     width: 10%;
 }
+
+.multiselect__option--selected {
+    background-color: red;
+  }
+  
+  .multiselect__option--highlight {
+    background-color: green;
+    background: green;
+  }

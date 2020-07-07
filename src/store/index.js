@@ -12,13 +12,16 @@ export default new Vuex.Store({
     language: () => {
       const language = LanguageService.getLanguage();
       if (!language) {
-        return "en";
+        return {
+          title: "en",
+          flag: "gb"
+        };
       }
-      return language;
+      return JSON.parse(language);
     },
     isRightToLeft: () => {
-      let language = LanguageService.getLanguage();
-      if (language === "fa") {
+      let language = JSON.parse(LanguageService.getLanguage());
+      if (language && language.title === "fa") {
         return true;
       } else return false;
     }

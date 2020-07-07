@@ -15,7 +15,7 @@
 export default {
   name: "SimpleSelectLanguage",
   mounted() {
-    const lang = this.$store.getters.language;
+    const lang = this.$store.getters.language.title;
     for (let i = 0; i < this.options.length; i++) {
       if (this.options[i] === lang) {
         this.selected = this.options[i];
