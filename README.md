@@ -11,9 +11,6 @@ A simple example for multilingual website, created by vue.js. More like a playgr
 - Keeps the last selected language in local storage for reloads.
 - Ability to switch between right-to-left and left-to-right
 
-## Demo
-https://aliafsah1988.github.io/vue-multilingual/
-
 ## For running the application
 1) Go to the root of application and install packages with:
 ```bash
