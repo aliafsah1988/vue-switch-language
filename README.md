@@ -9,19 +9,26 @@ A simple example for multilingual website, created by vue.js. More like a playgr
 - Ability to change language of contents (with vue-i18n)
 - Couple of ready to use drop down components for selecting language.
 - Keeps the last selected language in local storage for reloads.
+- Ability to switch between right-to-left and left-to-right
 
 ## Demo
 https://aliafsah1988.github.io/vue-multilingual/
 
-### For running the application
+## For running the application
 1) Go to the root of application and install packages with:
-$npm install
+```bash
+npm install
+```
 2) Then run the application with
-$npm run serve
+```bash
+npm run serve
+```
+```bash
 3) If you want to build it:
-$npm run build
+npm run build
+```
 
-#### Dependencies
+## Dependencies
 - vue.js            https://github.com/vuejs/vue
 - vue-router        https://github.com/vuejs/vue-router
 - vuex              https://github.com/vuejs/vuex
