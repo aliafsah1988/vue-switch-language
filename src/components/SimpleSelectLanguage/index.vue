@@ -30,16 +30,7 @@ export default {
   },
   methods: {
     handleChange(event) {
-      const lang = event.target.value;
-      this.$store.dispatch("setLanguage", lang);
-      // reload with new language in url
-      let routeParams = this.$route.params;
-      routeParams.lang = lang;
-      this.$router.push({
-        name: this.$route.name,
-        params: routeParams
-      });
-      this.$router.go(0);
+      this.$emit("changed", event.target.value);
     }
   },
   data() {
