@@ -44,5 +44,16 @@
     "prettier": "^1.19.1",
     "sass-loader": "^9.0.2",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "keywords": [
+    "language",
+    "multi language",
+    "multi lang",
+    "multilingual",
+    "component",
+    "change language",
+    "select language",
+    "vue component",
+    "vue"
+  ]
 }
