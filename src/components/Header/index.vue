@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <SimpleSelectLanguage />
+    <SimpleSelectLanguage @changed="onChangedSimple" />
     <VueSelectLanguage
       :initLang="initLang"
       :options="options"
@@ -37,6 +37,16 @@ export default {
   },
   methods: {
     onChanged(langObject) {
+      this.storeSelectedLang(langObject);
+    },
+    onChangedSimple(title) {
+      const langObject = this.options.find(item => {
+        return item.title === title;
+      });
+      if (!langObject) return;
+      this.storeSelectedLang(langObject);
+    },
+    storeSelectedLang(langObject) {
       this.$store.dispatch("setLanguage", JSON.stringify(langObject));
       let newParams = this.$route.params;
       newParams.lang = langObject.title;
