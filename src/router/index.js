@@ -6,7 +6,7 @@ Vue.use(Router);
 
 export default new Router({
   // For production it's better to change it to history mode
-  mode: "hash", // for lunching in gh-pages, because I had no control on the server, I changed the mode to hash
+  mode: "hash", // For lunching in gh-pages, because I had no control on the server, I changed the mode to hash
   routes: [
     {
       path: "/",
